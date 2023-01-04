@@ -1,9 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include"time00.h"
 
-
-
-
 Time::Time()//无参构造
 {
 	hours = minute = 0;

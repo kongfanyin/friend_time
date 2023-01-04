@@ -14,6 +14,7 @@ int main(char argc, char** argv)
 	Time temp;
 	cout << "aida and tosca:\n";
 	cout << aida << ";" << tosca << endl;
+	temp = aida + tosca;
 	cout << "aida+tosca:" << temp << endl;
 	temp = aida * 1.17;
 	cout << "alida*1.17 :" << temp << endl;

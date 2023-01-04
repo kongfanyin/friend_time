@@ -36,6 +36,21 @@ Time Time::operator+(const Time &tt)const
 	sum.minute %= 60;
 	return sum;
 }
+Time Time::operator-(const Time &tt)const
+{
+	Time diff;
+	diff.minute = hours * 60 + minute - tt.hours * 60 - tt.minute;
+	diff.hours = diff.minute / 60;
+	diff.minute %= 60;
+	return diff;
+}
+Time Time::operator*(double mult)const
+{
+	Time result;
+
+
+
+}
 Time::~Time()
 {
 

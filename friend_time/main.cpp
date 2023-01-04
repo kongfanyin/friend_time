@@ -9,8 +9,8 @@ int main(char argc, char** argv)
 {
 	using std::cout;
 	using std::endl;
-	Time aida(3.55);
-	Time tosca(2, 48);
+	Time aida(3,55);
+	Time tosca(2,48);
 	Time temp;
 	cout << "aida and tosca:\n";
 	cout << aida << ";" << tosca << endl;

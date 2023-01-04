@@ -47,9 +47,15 @@ Time Time::operator-(const Time &tt)const
 Time Time::operator*(double mult)const
 {
 	Time result;
-
-
-
+	long TotalMinute = hours * mult * 60 + mult * minute;
+	result.hours = TotalMinute / 60;
+	result.minute = TotalMinute % 60;
+	return result;
+}
+std::ostream& operator<<(std::ostream &os, const Time &tt)
+{
+	os << tt.hours << "hours," << tt.minute << "minutes";
+	return os;
 }
 Time::~Time()
 {
